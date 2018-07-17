@@ -36,8 +36,8 @@
 
     </div>
     <div class="bottom-brand">
-        <ul style='position:fixed;right:2.5%;padding-top:1em'>
-            <li>
+        <ul class='arrow-ul'>
+            <li style='float:right'>
                 <a class='animated-arrow' href='research.html'>
                     <span class='the-arrow -left'>
                         <span class='shaft'></span>
@@ -158,11 +158,13 @@
                     </p>
 
                     <p style='padding-bottom:5em'>
-                        We have a toolbox for this research that includes: recombinant protein expression and engineering; glycosyltransferase expertise
-                        for the in vitro and in vivo synthesis of glycoconjugates; HPLC based N-glycan profiling of glycoproteins;
-                        basic carbohydrate chemistry to produce our own assay substrates for many different glycosyltransferases;
-                        experience with glycoside hydrolases for biomass degradation, or health related research. <strong>The Wakarchuk
-                        lab is always looking for motivated people to develop our research areas </strong>
+                        e have a toolbox for this research that includes: recombinant protein expression and engineering; glycosyltransferase expertise
+                        for the
+                        <span style='font-style:italic'>in vitro</span> and
+                        <span style='font-style:italic'>in vivo</span> synthesis of glycoconjugates; HPLC based analytical methods; basic carbohydrate chemistry
+                        to produce our own assay substrates for many different glycosyltransferases; and experience with
+                        glycoside hydrolases for biomass degradation and health related research. The Wakarchuk lab is always
+                        looking for motivated people to develop our research areas.
                     </p>
 
                 </div>
@@ -189,6 +191,8 @@
             $('.menu-button').click(function () {
                 console.log('nob')
                 $('#nav-icon4').toggleClass('open');
+                $('#nav-icon4 span').toggleClass('change-nav');
+
                 $('.menu').toggleClass('scale');
                 $('.collapse').fadeToggle(50);
             });
