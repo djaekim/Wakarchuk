@@ -29,9 +29,18 @@
 </head>
 
 <body>
+    <div id='loading'>
+            <img style= "width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);"src='images/Preloader/loading.gif'>
+    </div>
+            
 
 
-
+    
     <div class='top-brand' style='z-index:99;'>
         <h4> Wakarchuk Lab</h4>
 
@@ -190,7 +199,18 @@
 
     <script src="js/jquery-1.7.min.js"></script>
     <script>
+          $(window).on("load", function () {
+
+
+            setInterval(function () {
+            $('#loading').fadeOut(100);
+            $('#main').fadeIn(1000);
+
+            }, 2000);
+        });
+
         $(document).ready(function () {
+            
             $('.menu-button').click(function () {
                 console.log('nob')
                 $('#nav-icon4').toggleClass('open');
