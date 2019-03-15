@@ -17,32 +17,35 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
-    
+
 
 
     <style>
         ::-webkit-scrollbar {
             display: none;
         }
-        .newsOut{
-            top:100% !important;
+
+        .newsOut {
+            top: 100% !important;
             transition-property: all;
             transition-duration: 5s;
             transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-            
+
         }
-        .newsOn{
+
+        .newsOn {
             position: fixed;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    background-color: #ffffffe8;
-    z-index: 99;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            background-color: #ffffffe8;
+            z-index: 99;
         }
-        #breakingNews:hover{
-            letter-spacing:3px;
+
+        #breakingNews:hover {
+            letter-spacing: 3px;
             transition-property: all;
-           
+
             transition-duration: 1.5s;
         }
     </style>
@@ -50,28 +53,40 @@
 </head>
 
 <body>
-    
+
     <div id='loading'>
-            <img style= "width: 100px;
+        <img style="width: 100px;
             height: 100px;
             position: fixed;
             top: 70%;
             left: 50%;
-            transform: translate(-50%, -50%);"src='images/Preloader/loading.gif'>
+            transform: translate(-50%, -50%);" src='images/Preloader/loading.gif'>
     </div>
     <div id='announcement' class='newsOn'>
-        <div style='position:relative; top:50%; letter-spacing:1.5px'>
-           <h1> The Wakarchuk lab is relocating to the University of Alberta, May 2019. <br> We are looking for students of all kinds!  PM @wakarchuk for details. </h1>
-           <h3 style='padding-top:2.5%;text-transform:uppercase;'> <span id='continue' style=' border-bottom:1px solid; cursor:pointer'>  Continue? </span> </h3>
-            
+        <div class="container" style='font-size:1.5em; position:relative; top:50%; text-align:center; letter-spacing:1.5px'>
+
+            <h1> The Wakarchuk lab is relocating to the University of Alberta, May 2019. <br> We are looking for
+                students of all kinds! <a style="color:red" href="mailto:wwakarchuk@ryerson.ca"> PM @wakarchuk </a> for
+                details. </h1>
+            <!-- <h3 style='padding-top:2.5%;text-transform:uppercase;'> <span id='continue'
+                    style=' border-bottom:1px solid; cursor:pointer'> Continue to home? </span> </h3> -->
+            <div>
+                <span style='padding:0 2.5%;text-transform:uppercase;'> <a style="color:black" href="teamRyerson.html"
+                        class='breakingNewsLink' style=' border-bottom:1px solid; cursor:pointer'> See Ryerson Team?
+                    </a> </span>
+                <span style='padding:0 2.5%;text-transform:uppercase;'> <a style="color:black" href="teamAlberta.html"
+                        class='breakingNewsLink' style=' border-bottom:1px solid; cursor:pointer'> See U of Alberta
+                        Team? </a> </span>
+            </div>
+
         </div>
 
 
     </div>
 
 
-    
-    <div class='top-brand' style='z-index:99;'>
+
+    <div class='top-brand top-red' style='z-index:99;'>
         <h4> Wakarchuk Lab</h4>
 
     </div>
@@ -102,18 +117,19 @@
     </div>
     <div class="header" style='letter-spacing: .2em;'>
         <h3>
-                The Wakarchuk Lab for GlycoSciences 
+            The Wakarchuk Lab for GlycoSciences
         </h3>
         <br>
-        <h4>The Wakarchuk lab is an inclusive and welcoming community </h4> 
-        <h1>Glycobiology Lab</h1>
+        <h4>The Wakarchuk lab is an inclusive and welcoming community </h4>
+        <h1 class="red">Glycobiology Lab</h1>
     </div>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="mainNav">
         <div class="container" style='margin-bottom:5vh'>
 
-            <button id='button-collapse' class="navbar-toggler navbar-toggler-right" type="button" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button id='button-collapse' class="navbar-toggler navbar-toggler-right" type="button"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
 
                 <div class="menu">
 
@@ -151,6 +167,7 @@
                                 <li class="nav-item">
                                     <a class="links" href="team.html">Team</a>
                                 </li>
+
 
                             </ul>
                         </div>
@@ -200,17 +217,21 @@
                     </video>
                     <p>
                         The
-                        <strong>Wakarchuk lab for glycobiology </strong> is studying how glycosylation of various molecules plays
+                        <strong>Wakarchuk lab for glycobiology </strong> is studying how glycosylation of various
+                        molecules plays
                         a role in biology, or how to harness it for developing new therapeutics.
                     </p>
 
                     <p style='padding-bottom:5em'>
-                        We have a toolbox for this research that includes: recombinant protein expression and engineering; glycosyltransferase expertise
+                        We have a toolbox for this research that includes: recombinant protein expression and
+                        engineering; glycosyltransferase expertise
                         for the
                         <span style='font-style:italic'>in vitro</span> and
-                        <span style='font-style:italic'>in vivo</span> synthesis of glycoconjugates; HPLC based analytical methods; basic carbohydrate chemistry
+                        <span style='font-style:italic'>in vivo</span> synthesis of glycoconjugates; HPLC based
+                        analytical methods; basic carbohydrate chemistry
                         to produce our own assay substrates for many different glycosyltransferases; and experience with
-                        glycoside hydrolases for biomass degradation and health related research. The Wakarchuk lab is always
+                        glycoside hydrolases for biomass degradation and health related research. The Wakarchuk lab is
+                        always
                         looking for motivated people to develop our research areas.
                     </p>
 
@@ -234,23 +255,26 @@
 
     <script src="js/jquery-1.7.min.js"></script>
     <script>
-          $(window).on("load", function () {
+        $(window).on("load", function () {
 
 
             setInterval(function () {
-            $('#loading').fadeOut(100);
-            $('#main').fadeIn(1000);
+                $('#loading').fadeOut(100);
+                $('#main').fadeIn(1000);
 
             }, 2000);
         });
 
         $(document).ready(function () {
-            $('#continue').click(function(){
-                $('#announcement').fadeOut();
-                $('#announcement div').addClass('newsOut');
-                $('#breakingNews').fadeIn();
+            // $('#continue').click(function () {
+            //     $('#announcement').fadeOut();
+            //     $('#announcement div').addClass('newsOut');
+            //     $('#breakingNews').fadeIn();
+            // });
+            $('#breakingNewsLink').click(function () {
+                console.log('hello');
             });
-            $('#breakingNews').click(function(){
+            $('#breakingNews').click(function () {
                 $('#announcement').fadeIn();
                 $('#announcement div').removeClass('newsOut');
                 $('#breakingNews').fadeOut();

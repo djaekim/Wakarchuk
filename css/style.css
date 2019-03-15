@@ -340,7 +340,6 @@ a {
   font-size: 8em;
   margin-top: 1em;
   margin-bottom: 1em;
-  color: #ea4235;
   font-weight: 900;
   letter-spacing: 0.09em;
   cursor: pointer;
@@ -348,8 +347,11 @@ a {
   font-family: oswald !important;
 }
 
-.header h1:hover {
+.red:hover {
   color: #982a22;
+}
+.green:hover{
+  color:black;
 }
 
 .collapse {
@@ -479,11 +481,7 @@ a {
 }
 
 .top-brand {
-  background: linear-gradient(
-    to right,
-    rgb(234, 66, 53) 0%,
-    rgb(57, 63, 66) 100%
-  );
+
   color: white;
   z-index: 99;
   position: fixed;
@@ -494,6 +492,45 @@ a {
   -webkit-transition: height 0.5s ease;
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
+}
+
+.red{
+  color: #ea4235;
+}
+
+.top-red
+{
+  background: linear-gradient(
+    to right,
+    rgb(234, 66, 53) 0%,
+    rgb(57, 63, 66) 100%
+  );
+}
+
+.top-green
+{
+  background: linear-gradient( to right, #007C41 0%, rgb(57, 63, 66) 100%) !important;
+ 
+}
+.crew-hover:hover{
+  filter: brightness(0.8);
+  cursor:pointer;
+  transform: scale(1.2); /* Equal to scaleX(0.7) scaleY(0.7) */
+  
+  /* border: 2px dotted black; */
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition:transform 0.3s ease-in-out;
+  -ms-transition:transform 0.3s ease-in-out;
+}
+
+.green{
+  /* color:#007C41; */
+  color:#035930;
+}
+
+.shadow{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 0%;
 }
 
 .abstract {
