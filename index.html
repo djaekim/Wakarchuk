@@ -62,14 +62,15 @@
             left: 50%;
             transform: translate(-50%, -50%);" src='images/Preloader/loading.gif'>
     </div>
-    <div id='announcement' class='newsOn'>
-        <div class="container" style='font-size:1.5em; position:relative; top:50%; text-align:center; letter-spacing:1.5px'>
+    <!-- <div id='announcement' class='newsOn'>
+        <div class="container"
+            style='font-size:1.5em; position:relative; top:50%; text-align:center; letter-spacing:1.5px'>
 
             <h1> The Wakarchuk lab is relocating to the University of Alberta, May 2019. <br> We are looking for
-                students of all kinds! <a style="color:red" href="mailto:wwakarchuk@ryerson.ca"> PM @wakarchuk </a> for
+                students of all kinds! <a style="color:red" href="mailto:Warren.Wakarchuk@ualberta.ca"> PM @wakarchuk </a> for
                 details. </h1>
-            <!-- <h3 style='padding-top:2.5%;text-transform:uppercase;'> <span id='continue'
-                    style=' border-bottom:1px solid; cursor:pointer'> Continue to home? </span> </h3> -->
+            <h3 style='padding-top:2.5%;text-transform:uppercase;'> <span id='continue'
+                    style=' border-bottom:1px solid; cursor:pointer'> Continue to home? </span> </h3>
             <div>
                 <span style='padding:0 2.5%;text-transform:uppercase;'> <a style="color:black" href="teamRyerson.html"
                         class='breakingNewsLink' style=' border-bottom:1px solid; cursor:pointer'> See Ryerson Team?
@@ -78,11 +79,22 @@
                         class='breakingNewsLink' style=' border-bottom:1px solid; cursor:pointer'> See U of Alberta
                         Team? </a> </span>
             </div>
+            <br><br><br>
+            <h3>
+                <a class="red" id="continueHome" href="#!">
+                    Continue Home
+                </a>
+
+            </h3>
+
+
+
+
 
         </div>
 
 
-    </div>
+    </div> -->
 
 
 
@@ -117,10 +129,10 @@
     </div>
     <div class="header" style='letter-spacing: .2em;'>
         <h3>
-            The Wakarchuk Lab for GlycoSciences
+            Wakarchuk Lab for GlycoScience at the University of Alberta
         </h3>
         <br>
-        <h4>The Wakarchuk lab is an inclusive and welcoming community </h4>
+        <h4>We are a welcoming community who value diversity </h4>
         <h1 class="red">Glycobiology Lab</h1>
     </div>
 
@@ -173,12 +185,14 @@
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <h4>EMAIL</h4>
-                            <p class='contact'>wwakarchuk@ryerson.ca</p>
+                            <p class='contact'>Warren.Wakarchuk@ualberta.ca</p>
                         </div>
                         <div class="col-md-4 col-xs-12">
                             <h4>CONTACT</h4>
-                            <div class="contact"> 350 Victoria Street, Toronto, Ontario, Canada M5B 2K3</div>
-                            <p class='contact'>(416-979-5000 x3207)</p>
+                            <div class="contact"> Centennial Centre for Interdisciplinary Science (CCIS) 5-185,
+                                Edmonton, Alberta
+                            </div>
+                            <p class='contact'>(780 492-0587)</p>
 
                         </div>
                         <div class="col-md-4 col-xs-12">
@@ -188,13 +202,6 @@
                                     <i class="fa fa-twitter" style="font-size:36px"></i>
                                 </a>
                             </p>
-                            <!-- <div class="twitter">
-                                <a class="twitter-timeline" data-height="450" data-chrome="noscrollbar" href="https://twitter.com/WakarchukLab?ref_src=twsrc%5Etfw">Tweets by WakarchukLab</a>
-                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                            </div> -->
-
-
                         </div>
 
                     </div>
@@ -215,7 +222,7 @@
                     display: block;     background-color: white;">
                         <source src="images/LgtC-1.mp4" type="video/mp4">
                     </video>
-                    <p>
+                    <!-- <p>
                         The
                         <strong>Wakarchuk lab for glycobiology </strong> is studying how glycosylation of various
                         molecules plays
@@ -233,7 +240,39 @@
                         glycoside hydrolases for biomass degradation and health related research. The Wakarchuk lab is
                         always
                         looking for motivated people to develop our research areas.
+                    </p> -->
+                    <p>
+                        Glycobiology is the science of cellular communication and signalling through both simple and
+                        sophisticated carbohydrates. All cells use these carbohydrate-based communication pathways. Our
+                        lab
+                        wants to understand how these molecular interactions happen, and how we can make use of them to
+                        develop
+                        new ways to treat diseases, and to figure out how biology uses these interesting molecules for
+                        so many
+                        purposes!
+
                     </p>
+                    <p> The Wakarchuk lab specializes in using enzymes to make sophisticated carbohydrates, and we use
+                        biochemistry and synthetic biology to address this research area. We have projects in both
+                        fundamental
+                        glycoscience as well as applied projects.</p>
+
+                    <p>
+                        The Wakarchuk lab is always looking for interested students at all levels – undergraduates at
+                        every
+                        level are most welcome in the group. Students in Biology, Chemistry, or Biochemistry will all
+                        play a
+                        part in our group.
+                    </p>
+
+
+                    <p>
+                        The Wakarchuk lab is part of the <a class="red" href="http://canadianglycomics.ca/"> Canadian
+                            Glycomics </a> which
+                        is
+                        Canadian research network dedicated to GlycoScience.
+                    </p>
+                    <p> We are currently looking for MSc or PhD students for January 2020. </p>
 
                 </div>
 
@@ -266,11 +305,12 @@
         });
 
         $(document).ready(function () {
-            // $('#continue').click(function () {
-            //     $('#announcement').fadeOut();
-            //     $('#announcement div').addClass('newsOut');
-            //     $('#breakingNews').fadeIn();
-            // });
+            $('#continueHome').click(function () {
+                $('#announcement').fadeOut();
+                $('#announcement div').addClass('newsOut');
+                $('#breakingNews').fadeIn();
+            });
+
             $('#breakingNewsLink').click(function () {
                 console.log('hello');
             });
