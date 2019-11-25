@@ -14,7 +14,9 @@
         - phone
         -tab-port
         */
-
+.fancybox-button--thumbs{
+  display:none !important;
+}
 @font-face {
   font-family: "Bebas Neue";
   src: url("fonts/BebasNeue-Regular.otf");
