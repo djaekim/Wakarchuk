@@ -28,13 +28,13 @@
     <div class="bottom-brand">
         <ul class='arrow-ul'>
             <li style='float:left;transform: scaleX(-1);'>
-                <a class='animated-arrow' href='pub.html'>
+                <a class='animated-arrow' href='research.html'>
                     <span class='the-arrow -left'>
                         <span class='shaft'></span>
                     </span>
                     <span class='main'>
                         <span class='text' style='transform: scaleX(-1);'>
-                            Publication
+                            Research
                         </span>
                         <span class='the-arrow -right'>
                             <span class='shaft'></span>
@@ -43,6 +43,26 @@
                 </a>
 
             </li>
+        </li>
+        <li style='position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);'>
+            <a class='animated-arrow'  href='https://scholar.google.ca/citations?hl=en&user=M7DNxIgAAAAJ&view_op=list_works&sortby=pubdate'>
+                <span class=''>
+                    <span class='shaft'></span>
+                </span>
+                <span class='main'>
+                    <span class='text' style=''>
+                        Publication
+                    </span>
+                    <span class=''>
+                        <span class='shaft'></span>
+                    </span>
+                </span>
+            </a>
+
+        </li>
             <li style='float:right'>
                 <a class='animated-arrow' href='index.html'>
                     <span class='the-arrow -left'>
@@ -66,8 +86,7 @@
         <h3>
             The Wakarchuk Lab for GlycoScience
         </h3>
-        <h1>Glycobiology Team</h1>
-        <h2 style="padding-bottom:2.5%">Select your team</h2>
+        <h1 class="red">Glycobiology Lab</h1>
     </div>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="mainNav">
@@ -110,7 +129,7 @@
                                     <a class="links" href="research.html">Research</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="links" href="pub.html">Publications</a>
+                                    <a class="links" href="https://scholar.google.ca/citations?hl=en&user=M7DNxIgAAAAJ&view_op=list_works&sortby=pubdate">Publications</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -120,16 +139,17 @@
                             </ul>
                         </div>
                         <div class="col-md-4 col-xs-12">
-                                <h4>EMAIL</h4>
-                                <p class='contact'>Warren.Wakarchuk@ualberta.ca</p>
+                            <h4>EMAIL</h4>
+                            <p class='contact'>Warren.Wakarchuk@ualberta.ca</p>
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                            <h4>CONTACT</h4>
+                            <div class="contact"> Centennial Centre for Interdisciplinary Science (CCIS) 5-185,
+                                Edmonton, Alberta
                             </div>
-                            <div class="col-md-4 col-xs-12">
-                                <h4>CONTACT</h4>
-                                <div class="contact"> Centennial Centre for Interdisciplinary Science (CCIS) 5-185, Edmonton, Alberta
-                                        </div>
-                                <p class='contact'>(780 492-0587)</p>
-    
-                            </div>
+                            <p class='contact'>(780 492-0587)</p>
+
+                        </div>
                         <div class="col-md-4 col-xs-12">
                             <h4>MEDIA</h4>
                             <p id='twitter' class='contact'>
@@ -152,38 +172,350 @@
             </div>
         </div>
     </nav>
-    <section id='main' style="margin-bottom: 150px !important;">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-12 col-sm-12" style='margin-top:0rem'>
-                    <div class="row">
-
-                        <div class="crew-hover col-lg-6 col-md-6 col-xs-12 text-center mb-4 member red"
-                            style="display: block">
-                            <a href="teamRyerson.html">
-                                <h1> Ryerson Crew </h1>
-                                <img class="img-fluid d-block mx-auto" style="width:auto" src="images/Banner/Ryerson.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="crew-hover col-lg-6 col-md-6 col-xs-12 text-center mb-4 member red"
-                            style="display: block;">
-                            <a href="teamAlberta.html">
-                                <h1> Alberta Crew </h1>
-                                <img class="img-fluid d-block mx-auto" style="width:auto"  src="images/Banner/Alberta.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
 
     <!-- about the instruments -->
+    <main>
+        <section class="section-about">
+            <div class="container" style='margin-bottom:10em'>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id='group' class="col-lg-12 col-md-12 col-xs-12 text-center mb-4 member"
+                            style='color:white'>
+                            <img class="rounded-circle img-fluid d-block mx-auto"
+                                src="images_new/2019 Group shot Edmonton.jpg" alt="">
+
+                            <p class='about' style='margin-top:1em'> Group Photos </p>
+                            <p class='team-p'>Edmonton team Fall 2019:
+                                (L to R) Alina, Lucy, Hirak, Warren, Alex, Nicole, Sammar, Aayushi </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <div class="header">
+                            <h1 style='margin-bottom:1em;' class="red" id='crew'>Crew</h1>
+                        </div>
+
+                        <div class="container" id='content-main'>
+
+
+                            <div class="row">
+
+
+
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-1'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto"
+                                        src="images_new/Warren GlycoNet.jpg" alt="">
+                                    <h3 class='header team-name'>
+
+                                        Warren W. Wakarchuk
+                                    </h3>
+
+                                    <p class='about'> Principal Investigator</p>
+
+
+                                    <p class='team-p'>Warren has been leading a glycobiology team since 1994. His
+                                        expertise is in carbohydrate active enzymes, especially their structure and
+                                        function. His team has been developing enzymes for the synthesis of bioactive
+                                        molecules <em>in vitro</em> and <em>in vivo</em>. He is currently the Associate Scientific
+                                        Director of the NCE GlycoNet. When not directing the team, he can be found
+                                        cooking or playing guitar. </p>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-2'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto"
+                                        src="images_new/Nicole 2019.jpg" alt="">
+                                    <h3 class='header team-name'>
+                                        Nicole Thompson BSc
+                                    </h3>
+                                    <p class='about'> Technician </p>
+
+
+
+                                    </h2>
+                                    <p class='team-p'>Nicole is a biochemistry COOP program graduate of Waterloo
+                                        University. She is working on developing and characterizing the protein
+                                        O-glycosylation performed by the synthetic OGO operons in <em>E. coli</em>. She is also
+                                        working on cloning and characterizing a variety of glycosyltransferases for <em>in
+                                        vitro</em> synthetic work. </p>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-3'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/Sadia.JPG"
+                                        alt="">
+                                    <h3 class='header team-name'>
+                                        Sadia Rahmani BSc
+                                    </h3>
+                                    <p class='about'>PhD Candidate </p>
+
+                                    <p class='team-p'>
+                                        Sadia is working between the Wakarchuk and Antonescu labs
+                                        (https://www.antonesculab.com/). Sadia’s cell biology expertise is being applied
+                                        to understanding how endomembrane traffic is influenced through nutrient sensing
+                                        and extracellular glycosylation. Her work also includes application of
+                                        glycosyltransferases to probe signalling effects of cell surface modification.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-4'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/Hirak 1.JPG"
+                                        alt="">
+                                    <h3 class='header team-name'>
+                                        Hirak Saxena MSc
+                                    </h3>
+                                    <p class='about'> PhD Candidate </p>
+
+                                    <p class='team-p'>Hirak has taken on a lead role in unravelling the O-mannosylation
+                                        in <em>Actinobacteria</em>. He is applying synthetic biology to studying the biochemistry
+                                        of this process in the hope of working out if this modification is coupled to
+                                        protein export, and if there is a communication component to the story. He has
+                                        also been working on the <em>in vitro</em> remodelling of therapeutic protein glycans.
+                                    </p>
+                                </div>
+                                <!-- new -->
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-5'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto"
+                                        src="images_new/Wonyong picture.png" alt="">
+                                    <h3 class='header team-name'>
+                                        Won-Yong Song
+                                    </h3>
+                                    <p class='about'> PhD Candidate </p>
+
+                                    <p class='team-p'>
+                                        Won-Yong is working on the role of protein mannosylation in the biochemistry of
+                                        <em>Actinobacteria</em>. He is using synthetic biology to probe the function of the
+                                        mannose in selected proteins functions. One of those proteins is a peptide
+                                        prolyl isomerase.
+                                    </p>
+                                </div>
+
+                                <!-- end  -->
+
+
+
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-6'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto" src="images_new/Leif.jpg"
+                                        alt="">
+                                    <h3 class='header team-name'>
+                                        Leif LeClaire
+                                    </h3>
+                                    <p class='about'> BSc candidate </p>
+
+                                    <p class='team-p'>
+
+                                        Leif is assisting with the tuning up of various glycosyltransferases that will
+                                        be used to make various O-glycan core structures. He is working on optimizing
+                                        the enzymology of several transferases for building these glycans on peptides
+                                        and proteins <em>in vitro</em>. He is part of the Wakarchuk lab COVID-19 NSERC 
+                                        Alliance grant project with <a href="https://www.plantformcorp.com/news-detail.aspx?id=5d55ca19-d4ce-43b5-91cb-0d9721b72d9c#.X33pue17laQ">PlantForm Corp.</a>
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-12 text-center mb-4 member red" id='member-7'>
+                                    <img class="rounded-circle img-fluid d-block mx-auto" src="images/Josh 1.jpg"
+                                        alt="">
+                                    <h3 class='header team-name'>
+                                        Eyasu (Josh) Loha
+                                    </h3>
+                                    <p class='about'> BSc candidate </p>
+
+                                    <p class='team-p'>
+
+                                        Josh is working on polysialyltransferase expression and characterization for                                       r his undergraduate thesis
+                                        research. He is looking at both human and bacterial enzymes for this work.
+
+                                    </p>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="header">
+                            <h1 class="red" id='alumni' style='margin-bottom:1em;'>Alumni</h1>
+                        </div>
+                        <div class="container" style='color:black' id='writing'>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Tasnim Abukar (BSc, MSc graduate, Technician 2015 - 2020) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Jazyln Borges (BSc candidate Fall 2019 - Summer 2020) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Samar Barazesh (BSc candidate, SIP student, GlycoNet summer award 2019 - 2020) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Lucy Ross - Blevis (BSc candidate Fall 2019 - Summer 2020) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Alex Aguilera BSc (Technician 2019 - Spring 2020) </p>
+                                </div>
+
+                                <!--  -->
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Alina Aarvisais (BSc candidate COOP Fall 2019) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Ugbad Hassan BSc (Intern summer 2019) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Nakita Buenbrazo MSc (Technician 2016-2019) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Aju-Sue Francis MSc (Technician 2017-2019) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Lynn D'Souza (Research assistant 2017-2018) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Laura Kell MSc (MSc 2016-2018) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Biprajit Sanyal BSc (MSc Candidate 2015-2018) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Dr. Bettina Janesch (Postdoctoral Fellow 2016-2018)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Dr. Ting Du (Postdoctoral Fellow 2016-2018)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Alison Mark (COOP student 2017)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Vika Bardahl (COOP student 2016)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Tina Papazatos (COOP student 2016)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Dr. Lyann Sim (Postdoctoral Fellow 2013-2015)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Andrea Caple (COOP student 2015)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Brian Lam (COOP student 2015)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Mahrin Aziz (COOP student 2015)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Alejandra Culebro (Visiting PhD student, University of Helsinki,
+                                        Dec 2014-Feb 2015)
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Tamara Erak (MSc Candidate 2014-2015)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Bryan Hsu (4th year thesis student)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Soheilali Karmali (Volunteer/summer student, Sep 2013-Aug 2014)
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Marc de Asis (2011-2013 MSc, Waterloo)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Katrina Delos Santos (Research assistant, Sep 2013-Aug 2014) </p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Gary Chan (Summer student 2013)</p>
+                                </div>
+                                <div class="col-md-3 col-xs-3">
+                                    <p class='team-p'> Liza Calhoun (COOP student 2013)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id='gallery' class="col-lg-12 col-md-12 col-xs-12 text-center" style='color:white'>
+                        <div class="header">
+                            <h1 id='alumni' class="red" style='margin-bottom:1em;'>Lab Events</h1>
+                        </div>
+                        <div class="img-text">
+                            <h1> <span> Click To View </span></h1>
+                        </div>
+                        <a data-fancybox="gallery" href="images_new/Team at GlycoNet 2019.jpg"
+                            data-title="Team at GlycoNet 2019"
+                            data-caption="GlycoNet 2019: (L to R) Sadia, Lyann, Tasnim, Aj, Nicole, Warren (Hirak in front)">
+                            <img src="images_new/Team at GlycoNet 2019.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images_new/GlycoNet dinner 2019.jpg"
+                            data-caption="GlycoNet Dinner 2019">
+                            <img src="images_new/GlycoNet dinner 2019.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Wakarchuk lab party 2018.jpg"
+                            data-caption="Wakarchuk lab party 2018">
+                            <img src="images/Events/Wakarchuk lab party 2018.jpg">
+                        </a>
+
+
+
+                        <a data-fancybox="gallery" href="images/Events/Fasrah at OBD 2017.jpg"
+                            data-caption="Fasrah at OBD 2017">
+                            <img src="images/Events/Fasrah at OBD 2017.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Hirak 2015.jpg" data-caption="Hirak 2015">
+                            <img src="images/Events/Hirak 2015.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Lets not forget the socks.jpg"
+                            data-caption="Lets not forget the socks">
+                            <img src="images/Events/Lets not forget the socks.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Nakita 2015 presentation.JPG"
+                            data-caption="Nakita 2015 presentation">
+                            <img src="images/Events/Nakita 2015 presentation.JPG">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Sadia at GlycoNet 2018.jpg"
+                            data-caption="Sadia at GlycoNet 2018">
+                            <img src="images/Events/Sadia at GlycoNet 2018.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Soheil 2014.jpg" data-caption="Soheil 2014">
+                            <img src="images/Events/Soheil 2014.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Tasnim 2015 presentation.JPG"
+                            data-caption="Tasnim 2015 presentation">
+                            <img src="images/Events/Tasnim 2015 presentation.JPG">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/Warren and sialic acid 2016.jpg"
+                            data-caption="Warren and sialic acid 2016">
+                            <img src="images/Events/Warren and sialic acid 2016.jpg">
+                        </a>
+                        <a data-fancybox="gallery" href="images/Events/group 2014.jpeg"
+                            data-caption="December 2014: (L to R) Tamara, Alejandra, Nakita, Lyann, Warren, Bryan, Hirak, Soheil ">
+                            <img src="images/Events/group 2014.jpeg">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </main>
 
 
 
@@ -289,9 +621,9 @@
         $(document).on('click', function () {
             $('#exit').parent().slideUp();
         });
-        $('.rounded-circle').on('mouseover', function () {
-            $(this).next().toggleClass('red');
-        });
+        // $('.rounded-circle').on('mouseover', function () {
+        //     $(this).next().toggleClass('red');
+        // });
     </script>
 </body>
 
