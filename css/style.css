@@ -182,6 +182,9 @@ a {
 .featured-publication__item-title {
   margin-bottom: 1rem;
 }
+.degree{
+  color:black !important;
+}
 
 .member {
   display: none;
